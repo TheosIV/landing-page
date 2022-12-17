@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', 'Roboto', monospace, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    background-color: #A63F0F;
+    padding: 8px 32px;
+    height: 10vh;
+}
+
+.logo{
+    flex: 1 1 100px;
+    max-width: 200px;
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+.navigation{
+    flex: 3 3 400px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-links,
+.navigation-buttons{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navigation a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navigation-buttons{
+    margin-left: auto;
+
+}
+
+.navigation-buttons button{
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    height: 35px;
+    width: 150px;
+    min-width: 80px;
+}
+
+.navigation-buttons a{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#login{
+    background-color: white;
+}
+
+#login a{
+    color: #A63F0F;
+}
+
+#signup{
+    border-color: transparent;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: #A63F0F;
+    padding: 16px;
+}
+
+/*I have no idea how this part works*/
+.static{
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .9;
+    visibility: visible;
+}
+
+.banner-content-container{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 80%;
+    max-height: 100%;
+}
+
+.banner-txt,
+.banner-image{
+    flex: 1 1 auto;
+}
+
+.banner-image{
+    max-height: 406px;
+}
+.banner-image img{
+    width: 400px;
+    border: 3px dotted whitesmoke;
+    border-radius: 50%;
+}
+
+.banner-txt{
+    display: flex;
+    flex-direction: column;
+    Max-height: 100%;
+    gap: 20px;
+    color: white;
+}
+
+.banner-txt h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 3px white;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-txt p {
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-txt button{
+    display: block;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+    border: 3px solid whitesmoke;
+    border-radius: 16px;
+    background-color: transparent;
+    margin-top: 15px;
+}
+
+/* This is related to .static code, no idea also*/
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+
+
+.main-content{
+    height: 130vh;
+    background-color: #A63F0F;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    height: 130vh;
+    background-color: #A63F0F;
+    padding: 68px;
+}
+
+.main-content-container{
+    height: 100%;
+    width: 100%;
+    padding: 50px 120px;
+    color: white;
+}
+
+.main-content-container h5{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: gray;
+}
+
+.main-content-container h1{
+    max-width: 420px;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.main-content-container p{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    max-width: 600px;
+    line-height: 32px;
+}
