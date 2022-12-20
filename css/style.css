@@ -14,6 +14,7 @@ body{
     font-family: 'Rubik', 'Roboto', monospace, sans-serif;
 }
 
+/* HEADER */
 header{
     display: flex;
     align-items: center;
@@ -84,36 +85,21 @@ header{
     border-color: transparent;
 }
 
+/* HERO BANNER */
 nav{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90vh;
     background-color: #A63F0F;
-    padding: 16px;
-}
-
-/*I have no idea how this part works*/
-.static{
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    right: -50%;
-    bottom: -50%;
-    width: 200%;
-    height: 200vh;
-    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-    background-repeat: repeat;
-    animation: bg-animation .2s infinite;
-    opacity: .9;
-    visibility: visible;
+    padding: 32px;
 }
 
 .banner-content-container{
     display: flex;
     align-items: center;
     gap: 80px;
-    max-width: 80%;
+    max-width: 100%;
     max-height: 100%;
 }
 
@@ -124,10 +110,11 @@ nav{
 
 .banner-image{
     max-height: 406px;
+    padding-right: 37px;
 }
 .banner-image img{
     width: 400px;
-    border: 3px dotted whitesmoke;
+    border: 4px dashed whitesmoke;
     border-radius: 50%;
 }
 
@@ -137,6 +124,7 @@ nav{
     Max-height: 100%;
     gap: 20px;
     color: white;
+    padding-left: 38px;
 }
 
 .banner-txt h1{
@@ -151,8 +139,8 @@ nav{
 }
 
 .banner-txt p {
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 400;
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
@@ -171,7 +159,179 @@ nav{
     margin-top: 15px;
 }
 
-/* This is related to .static code, no idea also*/
+/* MAIN CONTENT */
+main{
+    display: flex;
+    align-items: center;
+    height: 130vh;
+    background-color: #F2F2F2;
+    padding: 32px;
+}
+
+.main-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+    padding: 37px;
+    color: #A63F0F;
+}
+
+.main-content-container h1{
+    font-size: 52px;
+    font-size: 700;
+    letter-spacing: 3px;
+    margin: 0;
+}
+.main-content-container h5{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin: 0;
+}
+
+.content{
+    display: flex;
+    gap: 16px;
+    padding: 8px 0;
+    margin-top: 20px;
+}
+
+.planets-container{
+    flex: 1 1 auto;
+    text-align: center;
+    border: 3px solid #A63F0F;
+}
+
+.planets-container p{
+    padding: 0 4px;
+    font-size: 16px;
+}
+
+.planet-img-title{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.planet-img-title img{
+    display: block;
+    margin: 0 auto;
+    border: 2px dashed #A63F0F;
+    border-radius: 50%;
+}
+
+.planet-img-title h3{
+    background-color: #A63F0F;
+    color: #F2F2F2;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.quote-main-container{
+    display: flex;
+    align-items: center;
+    background-color: #A63F0F;
+    height: 40vh;
+    padding: 72px;
+    color: #F2F2F2;
+}
+
+.quote-main-container p{
+    display: block;
+    font-size: 18px;
+    width: 70%;
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+/* NEWSLETTER */
+.newsletter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    height: 60vh;
+    color: #F2F2F2;
+    padding: 8px 54px;
+}
+
+.newsletter-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #A63F0F;
+    border-radius: 30px;
+    height: 60%;
+    width: 70%;
+    padding: 8px 16px;
+}
+
+.newsletter-container div h2{
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.newsletter-container div p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.newsletter-container div button{
+    border: 3px solid #F2F2F2;
+    border-radius: 15px;
+    background-color: transparent;
+    width: 200px;
+    height: 35px;
+}
+
+.newsletter-container div button a{
+    color: #F2F2F2;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A63F0F;
+    height: 10vh;
+    padding: 8px 32px;
+}
+
+footer p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #F2F2F2;
+    height: 30px;
+    line-height: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*I have no idea how this part works - STATIC*/
+.static{
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+}
+
 @keyframes bg-animation {
     0% { transform: translate(0,0) }
     10% { transform: translate(-5%,-5%) }
@@ -184,50 +344,4 @@ nav{
     80% { transform: translate(-15%,0) }
     90% { transform: translate(10%,5%) }
     100% { transform: translate(5%,0) }
-}
-
-
-.main-content{
-    height: 130vh;
-    background-color: #A63F0F;
-}
-
-
-main{
-    display: flex;
-    align-items: center;
-    height: 130vh;
-    background-color: #A63F0F;
-    padding: 68px;
-}
-
-.main-content-container{
-    height: 100%;
-    width: 100%;
-    padding: 50px 120px;
-    color: white;
-}
-
-.main-content-container h5{
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: gray;
-}
-
-.main-content-container h1{
-    max-width: 420px;
-    font-size: 40px;
-    font-weight: 900;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.main-content-container p{
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    max-width: 600px;
-    line-height: 32px;
 }
